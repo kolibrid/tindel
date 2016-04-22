@@ -19,7 +19,7 @@ class LoginViewController: UIViewController {
         let defaults = NSUserDefaults.standardUserDefaults();
         defaults.setValue("email@email.com", forKey: "email")
         defaults.synchronize()
-        var email = defaults.objectForKey("email")
+        _ = defaults.objectForKey("email")
     }
 
     override func didReceiveMemoryWarning() {

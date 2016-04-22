@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,41 +19,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qj5-23-7Hi">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="8314986683_e01a017d5f_o" translatesAutoresizingMaskIntoConstraints="NO" id="qj5-23-7Hi">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qj5-23-7Hi" secondAttribute="height" multiplier="1:1" id="QDF-OO-mV6"/>
+                                    <constraint firstAttribute="width" secondItem="qj5-23-7Hi" secondAttribute="height" multiplier="1:1" id="dcg-QG-U0c"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fwi-Ga-DQo">
-                                <rect key="frame" x="279" y="433" width="42" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NOMBRE" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hf9-C1-P63">
+                                <rect key="frame" x="40" y="395" width="520" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fwi-Ga-DQo">
+                                <rect key="frame" x="40" y="441" width="520" height="30"/>
+                                <color key="backgroundColor" red="0.95294117647058818" green="0.25098039215686274" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="42" id="SdO-sL-6D5"/>
                                 </constraints>
-                                <state key="normal" title="Log in"/>
+                                <state key="normal" title="ENTRAR">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="GsI-sa-VDh" kind="show" id="BFa-F8-i7Z"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tinder-logo" translatesAutoresizingMaskIntoConstraints="NO" id="RRX-FN-tzJ">
-                                <rect key="frame" x="180" y="68" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tindel-log" translatesAutoresizingMaskIntoConstraints="NO" id="RRX-FN-tzJ">
+                                <rect key="frame" x="180" y="39" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="Tk3-a6-W79"/>
                                     <constraint firstAttribute="height" constant="128" id="m5y-hT-WAH"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hf9-C1-P63">
-                                <rect key="frame" x="40" y="395" width="520" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fwi-Ga-DQo" secondAttribute="trailing" constant="20" id="55j-oO-t8f"/>
                             <constraint firstItem="hf9-C1-P63" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="7aD-7b-hPm"/>
+                            <constraint firstItem="qj5-23-7Hi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="93Y-qf-dVM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hf9-C1-P63" secondAttribute="trailing" constant="20" id="FaD-VZ-ady"/>
+                            <constraint firstItem="qj5-23-7Hi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LGD-qN-aTD"/>
                             <constraint firstItem="RRX-FN-tzJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Or0-5j-2Dj"/>
                             <constraint firstItem="Fwi-Ga-DQo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iF0-2z-y6G"/>
                             <constraint firstItem="RRX-FN-tzJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="48" id="lj8-tk-Pbl"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Fwi-Ga-DQo" secondAttribute="bottom" constant="137" id="msE-0j-bVa"/>
                             <constraint firstItem="Fwi-Ga-DQo" firstAttribute="top" secondItem="hf9-C1-P63" secondAttribute="bottom" constant="8" id="pes-yQ-hKK"/>
+                            <constraint firstItem="Fwi-Ga-DQo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="r1Q-Qk-IRM"/>
+                            <constraint firstItem="Fwi-Ga-DQo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yU2-XJ-zMQ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -67,18 +80,38 @@
         <scene sceneID="IHX-QJ-SUe">
             <objects>
                 <tableViewController id="GsI-sa-VDh" customClass="PeopleTableViewController" customModule="Tindel" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="HFJ-ec-JS2">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="572" sectionHeaderHeight="28" sectionFooterHeight="28" id="HFJ-ec-JS2">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="YqK-FM-7x9">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="540" id="YqK-FM-7x9" customClass="PeopleTableViewCell" customModule="Tindel" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="540"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YqK-FM-7x9" id="au8-Oh-Kxa">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="539"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="luQ-XK-IKc">
+                                            <rect key="frame" x="0.0" y="-7" width="600" height="546"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTf-nS-ls7">
+                                            <rect key="frame" x="86" y="478" width="405" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="UTf-nS-ls7" secondAttribute="bottom" constant="32" id="6dY-8V-tVf"/>
+                                        <constraint firstItem="UTf-nS-ls7" firstAttribute="leading" secondItem="au8-Oh-Kxa" secondAttribute="leadingMargin" constant="78" id="Uxp-BP-OCt"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="UTf-nS-ls7" secondAttribute="trailing" constant="101" id="n0z-cQ-kSK"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="newImage" destination="luQ-XK-IKc" id="VVI-Yo-nLA"/>
+                                    <outlet property="newLabel" destination="UTf-nS-ls7" id="Xki-Ay-Qes"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -93,6 +126,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="tinder-logo" width="186" height="138"/>
+        <image name="8314986683_e01a017d5f_o" width="800" height="800"/>
+        <image name="tindel-log" width="186" height="138"/>
     </resources>
 </document>

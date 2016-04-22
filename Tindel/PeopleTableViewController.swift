@@ -10,11 +10,14 @@ import UIKit
 
 class PeopleTableViewController: UITableViewController {
     
+    let data = Data()
     // Crear array
-
+    //var aPeople: [String] = ["Pepe", "Andres"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //self.aPeople = ["Pepe", "Andres", "JOSE"]
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -31,21 +34,26 @@ class PeopleTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return data.people.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
-
-        return cell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! PeopleTableViewCell
+            let oPersona = data.people[indexPath.row]
+        
+            let imagenew = UIImage(named: oPersona.filename)
+        
+            let name = oPersona.heading
+            cell.newLabel.text = name
+            cell.newImage.image = imagenew
+            //cell.nameLabel.text = oPersona;
+            return cell;
     }
     
 
