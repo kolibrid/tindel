@@ -1,0 +1,303 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF273BF31CCA922E00E73609 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF273BF21CCA922E00E73609 /* AppDelegate.swift */; };
+		DF273BF51CCA922E00E73609 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF273BF41CCA922E00E73609 /* ViewController.swift */; };
+		DF273BF81CCA922E00E73609 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF273BF61CCA922E00E73609 /* Main.storyboard */; };
+		DF273BFA1CCA922E00E73609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF273BF91CCA922E00E73609 /* Assets.xcassets */; };
+		DF273BFD1CCA922E00E73609 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF273BFB1CCA922E00E73609 /* LaunchScreen.storyboard */; };
+		DF273C051CCA972200E73609 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF273C041CCA972200E73609 /* LoginViewController.swift */; };
+		DF273C071CCA97B600E73609 /* PeopleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF273C061CCA97B600E73609 /* PeopleTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DF273BEF1CCA922E00E73609 /* Tindel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tindel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF273BF21CCA922E00E73609 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DF273BF41CCA922E00E73609 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF273BF71CCA922E00E73609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF273BF91CCA922E00E73609 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF273BFC1CCA922E00E73609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF273BFE1CCA922E00E73609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF273C041CCA972200E73609 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DF273C061CCA97B600E73609 /* PeopleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF273BEC1CCA922E00E73609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF273BE61CCA922E00E73609 = {
+			isa = PBXGroup;
+			children = (
+				DF273BF11CCA922E00E73609 /* Tindel */,
+				DF273BF01CCA922E00E73609 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF273BF01CCA922E00E73609 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF273BEF1CCA922E00E73609 /* Tindel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF273BF11CCA922E00E73609 /* Tindel */ = {
+			isa = PBXGroup;
+			children = (
+				DF273BF21CCA922E00E73609 /* AppDelegate.swift */,
+				DF273BF41CCA922E00E73609 /* ViewController.swift */,
+				DF273BF61CCA922E00E73609 /* Main.storyboard */,
+				DF273BF91CCA922E00E73609 /* Assets.xcassets */,
+				DF273BFB1CCA922E00E73609 /* LaunchScreen.storyboard */,
+				DF273BFE1CCA922E00E73609 /* Info.plist */,
+				DF273C041CCA972200E73609 /* LoginViewController.swift */,
+				DF273C061CCA97B600E73609 /* PeopleTableViewController.swift */,
+			);
+			path = Tindel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF273BEE1CCA922E00E73609 /* Tindel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF273C011CCA922E00E73609 /* Build configuration list for PBXNativeTarget "Tindel" */;
+			buildPhases = (
+				DF273BEB1CCA922E00E73609 /* Sources */,
+				DF273BEC1CCA922E00E73609 /* Frameworks */,
+				DF273BED1CCA922E00E73609 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tindel;
+			productName = Tindel;
+			productReference = DF273BEF1CCA922E00E73609 /* Tindel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF273BE71CCA922E00E73609 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Geekshub;
+				TargetAttributes = {
+					DF273BEE1CCA922E00E73609 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = DF273BEA1CCA922E00E73609 /* Build configuration list for PBXProject "Tindel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF273BE61CCA922E00E73609;
+			productRefGroup = DF273BF01CCA922E00E73609 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF273BEE1CCA922E00E73609 /* Tindel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF273BED1CCA922E00E73609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF273BFD1CCA922E00E73609 /* LaunchScreen.storyboard in Resources */,
+				DF273BFA1CCA922E00E73609 /* Assets.xcassets in Resources */,
+				DF273BF81CCA922E00E73609 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF273BEB1CCA922E00E73609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF273C051CCA972200E73609 /* LoginViewController.swift in Sources */,
+				DF273BF51CCA922E00E73609 /* ViewController.swift in Sources */,
+				DF273C071CCA97B600E73609 /* PeopleTableViewController.swift in Sources */,
+				DF273BF31CCA922E00E73609 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DF273BF61CCA922E00E73609 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF273BF71CCA922E00E73609 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF273BFB1CCA922E00E73609 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF273BFC1CCA922E00E73609 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF273BFF1CCA922E00E73609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF273C001CCA922E00E73609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF273C021CCA922E00E73609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tindel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geekshub.Tindel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DF273C031CCA922E00E73609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tindel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geekshub.Tindel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF273BEA1CCA922E00E73609 /* Build configuration list for PBXProject "Tindel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF273BFF1CCA922E00E73609 /* Debug */,
+				DF273C001CCA922E00E73609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF273C011CCA922E00E73609 /* Build configuration list for PBXNativeTarget "Tindel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF273C021CCA922E00E73609 /* Debug */,
+				DF273C031CCA922E00E73609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF273BE71CCA922E00E73609 /* Project object */;
+}
